@@ -13,36 +13,23 @@
 \input{preamble.tex}
 
 \begin{document}
-% TODO: Formatting
 \input{title.tex}
+\hypersetup{pageanchor=false}
 \maketitle
-\setcounter{tocdepth}{2}
-\tableofcontents
-
-\pagebreak
-\newfontfamily\myfont{CMU Sans Serif}
-\begin{center}
-    \hspace{0pt}
-    \vfill
-    {\Huge\myfont
-        Текст ВКР или учебной практики пишется не ради зачета, а чтобы люди его прочитали, поняли как круто Вы все сделали, и могли продолжить с того места, где Вы остановились.
-        \vspace{2em}
-
-        Повторять эту страницу в тексте вашей работы \emph{нельзя}.}
-    \vfill
-    \hspace{0pt}
-\end{center}
-\pagebreak
-
-\input{000_intro}
+\hypersetup{pageanchor=true}
+\input{005_annotation}
 \input{010_task}
 \input{020_related}
 \input{030_solution}
 \input{040_experiment}
-\input{050_conclusion}
 
+\begingroup
+\small
+\setstretch{1.0}
 \setmonofont{CMU Typewriter Text}
+\interlinepenalty=10000
 \bibliographystyle{ugost2008ls}
 \bibliography{vkr}
+\endgroup
 
 \end{document}
