@@ -24,3 +24,8 @@ _minted-*
 # Tex Studio files
 *.txss2
 
+# Local agent settings and transient runtime files
+.agents/
+.codex/
+__pycache__/
+
